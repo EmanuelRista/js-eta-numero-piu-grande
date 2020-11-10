@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+    <script type="text/javascript">
+      var eta1 = parseInt(prompt("Inserisci la tua età"));
+
+      while (isNaN(eta1)) {
+        alert("L'età inserita deve essere un numero");
+        eta1 = parseInt(prompt("Inserisci la tua età"));
+      };
+
+      var eta2 = parseInt(prompt("Inserisci l'età di tuo fratello"));
+
+      while (isNaN(eta2)) {
+        alert("L'età inserita deve essere un numero");
+        eta2 = parseInt(prompt("Inserisci l'età di tuo fratello"));
+      };
+
+
+      if (eta1 > eta2) {
+        alert("Sei più grande di tuo fratello");
+      } else if (eta1 < eta2) {
+        alert("Tuo fratello è più grande di te");
+      } else {
+        alert("Tu e tuo fratello avete la stessa età");
+      };
+
+
+    </script>
+  </body>
+</html>
